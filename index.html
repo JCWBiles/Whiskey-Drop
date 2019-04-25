@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span><!-- This compenent is what provides the three bar icon for the button --></button>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <!-- The id name mist match the data-target seen in row 20 -->
+        <!-- The id name must match the data-target seen in row 32 -->
         <ul class="navbar-nav mr-auto">
           <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
           <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
@@ -69,7 +69,7 @@
           <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
           <hr class="block-divider block-divider--teal">
           <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-            <s class="d-none d-sm-inline">$19.99</s>
+            <s class="d-none d-sm-inline">$19.99</s><br>
             <span class="d-inline d-sm-none"><br></span>
             <strong><mark>First one is free!</mark></strong></p>
           <button class="btn btn-lg btn--cta btn--teal" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
@@ -82,78 +82,84 @@
   <!-- /.callout -->
 
   <!-- Quotes -->
-  <div class="container quotes-container">
-    <secion class="quotes">
-      <div class="row">
-        <div class="col-12 my-5">
-          <h2 class="text-uppercase">Quotes:</h2>
+  <div class="container-wrapper">
+    <div class="container quotes-container content-container">
+      <secion class="quotes">
+        <div class="row">
+          <div class="col-12 page-header">
+            <h2 class="text-uppercase">Quotes:</h2>
+            <hr class="block-divider block-divider--short">
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="media">
-            <div class="d-none d-sm-block">
-              <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="media">
+              <div class="d-none d-sm-block">
+                <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+              </div>
+              <div class="media-body">
+                <blockquote class="blockquote">
+                  <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                  <p>- Jane Doe</p>
+                </blockquote>
+              </div>
             </div>
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                <p>- Jane Doe</p>
-              </blockquote>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="media">
+              <div class="d-none d-sm-block">
+                <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100></img>
+              </div>
+              <div class="media-body">
+                <blockquote class="blockquote">
+                  <p>I haven't been sober for months!</p>
+                  <p>- John Doe</p>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="media">
-            <div class="d-none d-sm-block">
-              <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100></img>
-            </div>
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p>I haven't been sober for months!</p>
-                <p>- John Doe</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </secion>
+      </secion>
+    </div>
   </div>
   <!-- /.quotes -->
 
   <!-- Features -->
-  <div class="container features-container">
-    <section class="features">
-      <div class="row">
-        <div class="col-12 my-5">
-          <h2 class="text-uppercase">Features:</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="feature">
-            <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur corrupti ex, nesciunt, rerum, repudiandae sint explicabo fugit nihil animi modi nostrum tenetur cumque, accusantium nobis optio omnis itaque nulla. Provident odit
-              eos repellat velit.</p>
-            <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+  <div class="container-wrapper container-wrapper--teal">
+    <div class="container features-container content-container">
+      <section class="features">
+        <div class="row">
+          <div class="col-12 page-header">
+            <h2 class="text-uppercase">Features:</h2>
+            <hr class="block-divider block-divider--short block-divider--white">
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="feature">
-            <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente possimus ipsam suscipit quis aliquam, laborum quidem, molestias nihil veniam consequatur alias laboriosam quae magni consectetur sequi ut. Vitae, animi, blanditiis.</p>
-            <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <h3><i class="fas fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur corrupti ex, nesciunt, rerum, repudiandae sint explicabo fugit nihil animi modi nostrum tenetur cumque, accusantium nobis optio omnis itaque nulla. Provident odit
+                eos repellat velit.</p>
+              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="feature">
+              <h3><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente possimus ipsam suscipit quis aliquam, laborum quidem, molestias nihil veniam consequatur alias laboriosam quae magni consectetur sequi ut. Vitae, animi, blanditiis.</p>
+              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+            </div>
+          </div>
+          <div class="col-12 d-md-none d-lg-block col-lg-4">
+            <div class="feature">
+              <h3><i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis asperiores laboriosam neque fugit suscipit ipsum porro, quod enim incidunt ut ducimus consequatur, quo facere libero fugiat animi vel dolores.</p>
+              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+            </div>
           </div>
         </div>
-        <div class="col-12 d-md-none d-lg-block col-lg-4">
-          <div class="feature">
-            <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis asperiores laboriosam neque fugit suscipit ipsum porro, quod enim incidunt ut ducimus consequatur, quo facere libero fugiat animi vel dolores.</p>
-            <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
   <!-- /.features -->
 

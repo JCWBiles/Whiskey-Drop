@@ -6,12 +6,16 @@ body {
 
 .callout-container {
     height: 100vh;
-    
-    background: url("../images/whiskey-background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+    background: url("../images/whiskey-background.jpg") no-repeat bottom left fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quotes-container {}
@@ -19,3 +23,41 @@ body {
 .features-container {}
 
 .monthly-container {}
+
+/*Block Dividers*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: teal
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: #628cb7;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #7d6556;
+    text-shadow: white 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.jumbotron small {
+    font-size: 90%;
+    font-weight: 500;
+    color: White;
+}

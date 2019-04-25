@@ -16,6 +16,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .quotes-container {}
@@ -30,7 +41,14 @@ body {
     width: 75px;
     height: 5px;
     border: 0;
+}
+
+.block-divider--teal {
     background-color: teal
+}
+
+.block-divider--short {
+    width: 35px;
 }
 
 /*Jumbotron*/
@@ -49,15 +67,27 @@ body {
 }
 
 .jumbotron .lead {
-    font-size: 1.25rem;
+    font-size: 1.40rem;
     font-weight: bold;
-    color: #7d6556;
-    text-shadow: white 0px 0px 1px;
-    -webkit-font-smoothing: antialiased;
+    color: #66d2d2;
 }
 
 .jumbotron small {
     font-size: 90%;
     font-weight: 500;
     color: White;
+}
+
+/*Buttons*/
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
 }
